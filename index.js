@@ -36,7 +36,9 @@ httpsServer.listen(config.https_port,function(){
 //define a request router
 const router = {
     'ping' : handlers.ping,
-    'users' : handlers.users
+    'users' : handlers.users,
+    'tokens' : handlers.tokens,
+    'checks' : handlers.checks
 }
 
 const unifiedServer = function(req, res) {   
