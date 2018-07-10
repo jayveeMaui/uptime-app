@@ -10,6 +10,11 @@ const _data = require ('./lib/data');
 const handlers = require('./lib/handlers');
 const helpers = require('./lib/helpers');
 
+
+helpers.sendTwillioSms('9397671211', 'hi miemie testing from twilio', function(err){
+    console.log(err);
+})
+
 //instatiate http server
 const httpServer = http.createServer(function(req, res){
     unifiedServer(req, res);
