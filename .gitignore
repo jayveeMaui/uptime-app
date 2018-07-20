@@ -1,0 +1,5 @@
+**/users/
+**/checks/
+**/tokens/
+*.log
+*.gz.b64
